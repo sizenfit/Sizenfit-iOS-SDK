@@ -8,12 +8,16 @@ Here are the detailed instructions.
     (3 types of files are present - i.e, assets folder , an .a file which is a library and the include folder)
     
 2. Make the following 2 changes in the project settings for the library.
+
     a. Go to project-->BuildSetting-->other Linker Flags add -ObjC.
+    
     b. Add the swift latest version to project
         (project-->buildsetting-->swift langauge version-->4.2)
-        
-3. On the pdp page(product display page or the page where you want to show the widget) import the following file 
-    "HeightWeightCalculationViewController.h"(you will find this file in the include folder)
+                
+3. On the pdp page(product display page or the page where you want to show the widget) import the following file. 
+
+    "HeightWeightCalculationViewController.h" (you will find this file in the include folder)
+    
     
 4. Once the file is imported create a button on the pdp page (or any other as mentioned above)
     On click of the button execute the following code-
