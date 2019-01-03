@@ -18,6 +18,7 @@ Here are the detailed instructions.
 4. Once the file is imported create a button on the pdp page (or any other as mentioned above)
     On click of the button execute the following code-
     a. For objectiveC developers:-
+    
             [self.navigationController.navigationBar setHidden:YES];
             UIViewController *mainController = [[HeightWeightCalculationViewController alloc] initWithNibName:@"HeightWeightCalculationViewController" bundle:nil];
             HeightWeightCalculationViewController *htWt = [[HeightWeightCalculationViewController alloc]initWithNibName:@"HeightWeightCalculationViewController" bundle:nil];
@@ -30,5 +31,6 @@ Here are the detailed instructions.
             [nav didMoveToParentViewController:self];
     
     b. For swift developers:-
+    
         You can use the above code structure as a reference to invoke the library files.  Please contact us if you run into any issues or need any support.
 
