@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ResultFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrS-7M-xiB">
+                    <rect key="frame" x="175.5" y="8" width="24" height="35"/>
+                    <state key="normal" image="refresharrow"/>
+                </button>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMn-PN-nIc">
+                    <rect key="frame" x="0.0" y="51" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.70980392160000005" green="0.70980392160000005" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="rJP-Hu-1XJ"/>
+                    </constraints>
+                </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnt-m9-L3i">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.70980392160000005" green="0.70980392160000005" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="nja-fg-eWr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tnt-m9-L3i" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2cc-rE-klz"/>
+                <constraint firstItem="JrS-7M-xiB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BBs-wf-Bvl"/>
+                <constraint firstItem="JrS-7M-xiB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="DeI-HP-QfC"/>
+                <constraint firstItem="tnt-m9-L3i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Prx-ha-EDb"/>
+                <constraint firstItem="gMn-PN-nIc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pys-cB-yQn"/>
+                <constraint firstAttribute="trailing" secondItem="tnt-m9-L3i" secondAttribute="trailing" id="Q8w-IR-ejY"/>
+                <constraint firstItem="gMn-PN-nIc" firstAttribute="top" secondItem="JrS-7M-xiB" secondAttribute="bottom" constant="8" id="SnL-pd-1fj"/>
+                <constraint firstItem="gMn-PN-nIc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Ue1-J9-DwM"/>
+                <constraint firstAttribute="trailing" secondItem="gMn-PN-nIc" secondAttribute="trailing" id="r3S-dy-Ir6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btn_refresh" destination="JrS-7M-xiB" id="jrp-Su-WF9"/>
+            </connections>
+            <point key="canvasLocation" x="168.80000000000001" y="-33.733133433283363"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresharrow" width="24" height="24"/>
+    </resources>
+</document>
