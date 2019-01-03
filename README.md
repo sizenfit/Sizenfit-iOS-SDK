@@ -32,5 +32,5 @@ Here are the detailed instructions.
     
     b. For swift developers:-
     
-        You can use the above code structure as a reference to invoke the library files.  Please contact us if you run into any issues or need any support.
+        You can use the above code structure as a reference to invoke the Size n Fit library files.  Please contact us if you run into any issues or need any support.
 
